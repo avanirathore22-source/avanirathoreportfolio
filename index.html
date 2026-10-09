@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avani Rathore | Designer</title>
+  <meta name="description" content="Portfolio of Avani Rathore, a designer working in graphic design, motion and editing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="blob-cursor" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="logo" href="#top" aria-label="Avani Rathore, home">ar<span>.</span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#work">work</a>
+      <a href="#skills">skills</a>
+      <a href="#about">about</a>
+      <a href="#play">play</a>
+      <a href="#contact">say hi</a>
+    </nav>
+    <div class="nav-tools">
+      <div class="swatches" role="group" aria-label="Pick an accent colour">
+        <button class="swatch" data-accent="periwinkle" style="--s:#7c8cff" aria-label="Periwinkle"></button>
+        <button class="swatch" data-accent="aqua" style="--s:#2fc4c4" aria-label="Aqua"></button>
+        <button class="swatch" data-accent="lilac" style="--s:#a58bff" aria-label="Lilac"></button>
+        <button class="swatch" data-accent="sky" style="--s:#4aa8ff" aria-label="Sky"></button>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch light and dark mode">
+        <span class="toggle-dot"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hello">hi there, i'm</p>
+        <h1>Avani<br>Rathore</h1>
+        <p class="role">a <button class="word" id="wordBtn" aria-live="polite" title="click me">graphic designer</button> who loves making things feel alive.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#work">see my work</a>
+          <a class="btn ghost" href="#contact">let's talk</a>
+        </div>
+        <p class="hint">psst, the stickers on the right can be dragged around</p>
+      </div>
+
+      <div class="sticker-board" id="board" aria-label="Draggable stickers">
+        <div class="sticker s1" style="--r:-8deg">
+          <svg viewBox="0 0 120 120" aria-hidden="true"><path d="M60 6l14 30 33 4-24 22 7 33-30-17-30 17 7-33L13 40l33-4z" fill="currentColor"/></svg>
+        </div>
+        <div class="sticker s2" style="--r:6deg">
+          <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="currentColor"/><circle cx="42" cy="50" r="7" fill="var(--bg)"/><circle cx="78" cy="50" r="7" fill="var(--bg)"/><path d="M38 74q22 20 44 0" stroke="var(--bg)" stroke-width="7" fill="none" stroke-linecap="round"/></svg>
+        </div>
+        <div class="sticker s3" style="--r:-4deg">
+          <svg viewBox="0 0 160 60" aria-hidden="true"><path d="M8 30q18-30 36 0t36 0 36 0 36 0" stroke="currentColor" stroke-width="9" fill="none" stroke-linecap="round"/></svg>
+        </div>
+        <div class="sticker s4" style="--r:10deg">
+          <svg viewBox="0 0 120 120" aria-hidden="true"><path d="M60 108C20 80 6 56 6 38a26 26 0 0 1 54-8 26 26 0 0 1 54 8c0 18-14 42-54 70z" fill="currentColor"/></svg>
+        </div>
+        <div class="sticker s5 text-sticker" style="--r:-6deg">pixel<br>pusher</div>
+        <div class="sticker s6" style="--r:4deg">
+          <svg viewBox="0 0 120 120" aria-hidden="true"><path d="M20 100V20h40a30 30 0 0 1 0 60H20" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>graphic design</span><i></i><span>motion</span><i></i><span>branding</span><i></i><span>editing</span><i></i><span>illustration</span><i></i><span>typography</span><i></i>
+        <span>graphic design</span><i></i><span>motion</span><i></i><span>branding</span><i></i><span>editing</span><i></i><span>illustration</span><i></i><span>typography</span><i></i>
+      </div>
+    </div>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="section-head">
+        <h2>selected work</h2>
+        <p>Placeholder projects for now. Swap in your own titles, images and links.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="chip is-on" data-filter="all">all</button>
+        <button class="chip" data-filter="branding">branding</button>
+        <button class="chip" data-filter="motion">motion</button>
+        <button class="chip" data-filter="print">print</button>
+        <button class="chip" data-filter="social">social</button>
+      </div>
+
+      <div class="grid" id="grid">
+        <article class="card" data-cat="branding" data-title="Moonbean Coffee" data-desc="A full identity for a small neighbourhood coffee roaster: logo, colour palette, packaging and menu boards." data-tools="Illustrator, Affinity Designer" tabindex="0">
+          <div class="art" style="--c1:#8fa2ff;--c2:#c9d2ff">
+            <svg viewBox="0 0 200 140" aria-hidden="true"><circle cx="100" cy="70" r="46" fill="#fff" opacity=".85"/><path d="M84 60q16-24 32 0t-32 30" stroke="#4a57d6" stroke-width="9" fill="none" stroke-linecap="round"/></svg>
+          </div>
+          <div class="card-body"><h3>Moonbean Coffee</h3><p>branding · identity</p></div>
+        </article>
+
+        <article class="card" data-cat="motion" data-title="Wobble Loop" data-desc="A looping title sequence with squishy shapes and bouncy type, built for a short film festival opener." data-tools="After Effects" tabindex="0">
+          <div class="art" style="--c1:#7ee8e0;--c2:#c8f7f1">
+            <svg viewBox="0 0 200 140" aria-hidden="true"><rect x="50" y="30" width="100" height="80" rx="40" fill="#fff" opacity=".85"/><circle cx="100" cy="70" r="16" fill="#1f9d9d"/></svg>
+          </div>
+          <div class="card-body"><h3>Wobble Loop</h3><p>motion · after effects</p></div>
+        </article>
+
+        <article class="card" data-cat="print" data-title="Field Notes Zine" data-desc="A 24 page risograph style zine about small everyday moments. Layout, illustration and cover design." data-tools="Affinity Publisher, Illustrator" tabindex="0">
+          <div class="art" style="--c1:#b6a2ff;--c2:#e2d9ff">
+            <svg viewBox="0 0 200 140" aria-hidden="true"><rect x="62" y="20" width="76" height="100" rx="10" fill="#fff" opacity=".88"/><path d="M76 48h48M76 64h48M76 80h30" stroke="#7a5ee0" stroke-width="7" stroke-linecap="round"/></svg>
+          </div>
+          <div class="card-body"><h3>Field Notes Zine</h3><p>print · editorial</p></div>
+        </article>
+
+        <article class="card" data-cat="social" data-title="Summer Pack" data-desc="A set of animated social templates: stories, reels covers and carousels with one consistent playful system." data-tools="After Effects, Affinity Photo" tabindex="0">
+          <div class="art" style="--c1:#7cc4ff;--c2:#cfe9ff">
+            <svg viewBox="0 0 200 140" aria-hidden="true"><rect x="38" y="30" width="40" height="80" rx="10" fill="#fff" opacity=".85"/><rect x="86" y="30" width="40" height="80" rx="10" fill="#fff" opacity=".6"/><rect x="134" y="30" width="40" height="80" rx="10" fill="#fff" opacity=".4"/></svg>
+          </div>
+          <div class="card-body"><h3>Summer Pack</h3><p>social · templates</p></div>
+        </article>
+
+        <article class="card" data-cat="branding" data-title="Pebble Studio" data-desc="Logo and visual language for a ceramics studio. Soft shapes, hand drawn lettering and a tactile colour system." data-tools="Illustrator, Affinity Designer" tabindex="0">
+          <div class="art" style="--c1:#9fe3c8;--c2:#d8f6ea">
+            <svg viewBox="0 0 200 140" aria-hidden="true"><ellipse cx="86" cy="76" rx="38" ry="30" fill="#fff" opacity=".88"/><ellipse cx="124" cy="62" rx="24" ry="20" fill="#2f9e78" opacity=".8"/></svg>
+          </div>
+          <div class="card-body"><h3>Pebble Studio</h3><p>branding · lettering</p></div>
+        </article>
+
+        <article class="card" data-cat="motion" data-title="Music Reel" data-desc="A fast paced edit set to a local band's single. Cuts, kinetic type and colour grading." data-tools="Premiere Pro, After Effects" tabindex="0">
+          <div class="art" style="--c1:#8d9bff;--c2:#7ee8e0">
+            <svg viewBox="0 0 200 140" aria-hidden="true"><path d="M82 44l56 26-56 26z" fill="#fff" opacity=".9"/></svg>
+          </div>
+          <div class="card-body"><h3>Music Reel</h3><p>motion · editing</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-head">
+        <h2>things i'm good at</h2>
+        <p>Poke a bubble. They pop.</p>
+      </div>
+      <div class="bubbles" id="bubbles">
+        <button class="bubble b1" data-level="90"><b>Graphic Design</b><small>90%</small></button>
+        <button class="bubble b2" data-level="85"><b>After Effects</b><small>85%</small></button>
+        <button class="bubble b3" data-level="88"><b>Illustrator</b><small>88%</small></button>
+        <button class="bubble b4" data-level="80"><b>Affinity</b><small>80%</small></button>
+        <button class="bubble b5" data-level="82"><b>Video Editing</b><small>82%</small></button>
+        <button class="bubble b6" data-level="75"><b>Typography</b><small>75%</small></button>
+        <button class="bubble b7" data-level="70"><b>Branding</b><small>70%</small></button>
+        <button class="bubble b8" data-level="65"><b>Photoshop</b><small>65%</small></button>
+      </div>
+      <p class="pop-count" id="popCount" aria-live="polite">popped: 0</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="about-copy">
+        <div class="section-head">
+          <h2>a little about me</h2>
+        </div>
+        <p>I'm Avani, a designer who likes work that feels warm, a bit silly and very well made. I'm happiest when a project mixes layout, illustration and motion.</p>
+        <p>This paragraph is a placeholder. Add where you studied, where you're based, who you've worked with and what you're looking for next.</p>
+        <ul class="facts">
+          <li><b>based in</b> your city, country</li>
+          <li><b>open to</b> freelance and full time</li>
+          <li><b>currently</b> making a zine</li>
+        </ul>
+      </div>
+      <div class="flip-stack" aria-label="Fun facts, click to flip">
+        <button class="flip" aria-label="Flip card"><span class="face front">fun fact #1</span><span class="face back">I name every project file after a snack.</span></button>
+        <button class="flip" aria-label="Flip card"><span class="face front">fun fact #2</span><span class="face back">My sketchbook always has a doodle of a cloud.</span></button>
+        <button class="flip" aria-label="Flip card"><span class="face front">fun fact #3</span><span class="face back">I can't start a layout without a playlist.</span></button>
+      </div>
+    </section>
+
+    <!-- PLAYGROUND -->
+    <section class="section" id="play">
+      <div class="section-head">
+        <h2>doodle pad</h2>
+        <p>Draw something. Pick a colour, change the brush, clear and start again.</p>
+      </div>
+      <div class="pad">
+        <div class="pad-tools">
+          <div class="pad-colors" role="group" aria-label="Brush colour">
+            <button class="dot is-on" style="--d:#5663e6" data-color="#5663e6" aria-label="Indigo"></button>
+            <button class="dot" style="--d:#2fc4c4" data-color="#2fc4c4" aria-label="Aqua"></button>
+            <button class="dot" style="--d:#a58bff" data-color="#a58bff" aria-label="Lilac"></button>
+            <button class="dot" style="--d:#4aa8ff" data-color="#4aa8ff" aria-label="Sky"></button>
+            <button class="dot" style="--d:#ff8fb1" data-color="#ff8fb1" aria-label="Pink"></button>
+          </div>
+          <label class="pad-size">brush <input type="range" id="brushSize" min="2" max="40" value="10"></label>
+          <button class="btn small ghost" id="clearPad">clear</button>
+        </div>
+        <canvas id="doodle" width="900" height="420" aria-label="Drawing canvas"></canvas>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="section-head">
+        <h2>say hi</h2>
+        <p>Got a project, a collab or just a cool idea? Tell me about it.</p>
+      </div>
+      <div class="contact-wrap">
+        <form id="contactForm" novalidate>
+          <label for="name">your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Jane Doe" required>
+          <label for="email">your email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="jane@email.com" required>
+          <label for="msg">what's the idea?</label>
+          <textarea id="msg" name="msg" rows="5" placeholder="Tell me a little about it..." required></textarea>
+          <button class="btn" type="submit">send it</button>
+          <p class="form-note" id="formNote" aria-live="polite"></p>
+        </form>
+        <div class="contact-side">
+          <p>or reach me directly</p>
+          <button class="copy" id="copyEmail" data-email="hello@yourname.com">hello@yourname.com <span>copy</span></button>
+          <ul class="socials">
+            <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Behance</a></li>
+            <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>made with love and way too many layers · <span id="year"></span> Avani Rathore</p>
+    <a href="#top" class="to-top">back to top ↑</a>
+  </footer>
+
+  <!-- project modal -->
+  <dialog id="modal">
+    <form method="dialog"><button class="modal-close" aria-label="Close">×</button></form>
+    <div class="modal-art" id="modalArt"></div>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+    <p class="modal-tools"><b>tools:</b> <span id="modalTools"></span></p>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
